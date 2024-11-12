@@ -3,88 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result</title>
-    <link rel="icon" type="image/x-icon" href="images/smit.jpg">
-    <style>
-        .rwr :link{
-          text-decoration: none;
-        }
-        .rwr :active{
-            text-decoration: none;
-        }
-        .rwr :hover{
-            text-decoration: none;
-            background-color:rgb(62, 206, 231);
-          border-radius: 5px;
-        }
-        .rwr :visited{
-            text-decoration: none;  
-        }
-       
-    </style>
+    <title>SMIT Registration Form</title>
+    <link rel="stylesheet" href="result.css"> <!-- Link to external CSS for styling -->
 </head>
 <body>
-    <br>
-    <center>
-   <labeL>
-    <a href="index.html"><img src="images/smitlogo.png" height="100" width="400"/></a>
-    
-  </labeL>
-</center>
-    <center>
-    <h1><strong>Registration Form - SMIT</h1></strong>
-</center>
-<center>
-    <h3><strong>Service - Education - Registration</strong></h3>
-    </center>
 
-<center>
- <table  cellspacing="7" cellpadding="6" class="rwr">
-    <tr>
-        <td bgcolor="#90c67e">
-            <a href="index.html">Registration</a>
-        </td>
-        <td bgcolor="#69b5e8">
-            <a href="download.html">Download Id Card</a>
-        </td>
-        <td bgcolor="#90c67e">
-            <a href="result.html">Result</a>
-        </td>
-    </tr>
-   </center>
-</table>
+    <!-- Logo and Title -->
+    <div class="header">
+        <a href="index.html" class="logo">
+            <img src="images/smitlogo.png" height="100" width="400" alt="SMIT Logo" title="Saylani-Form">
+        </a>
+        <h1 title="Registration Form - SMIT">Registration Form - SMIT</h1>
+        <h3 title="Service - Education - Registration">Service - Education - Registration</h3>
+    </div>
 
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+        <a href="index.html" class="nav-link registration" title="Registration">Registration</a>
+        <a href="download.html" class="nav-link download" title="Download ID Card">Download ID Card</a>
+        <a href="result.html" class="nav-link result" title="Result">Result</a>
+    </nav>
 
- <form>
-    <table>
-        <tr>
-            <td>
-                <label for="Rollnumber" style="color: #246db6; font-size: larger; margin-left: 5px; "><b>Roll Number</b></label>
-       <br>
-       <br>
-        <input type="number"name="quantity" placeholder="324233" style="width: 290px; padding: 15px;
-        border-radius: 6px;
-        border: 1px solid #90c648;
-        background-color: #ffffff;" required/>
-            </td>
-        </tr>
-       
-   
-    <br>
-   
-      
-            <tr>
-                <td>
-                    <button style="width: 322px; padding: 12px;
-                    margin-top: 10px;
-                    border-radius: 6px;
-                    border: 2px solid #246db6;
-                    background-color:#246db6;
-                    color: #ffffff;">Submit</button>
-                    
-                </td>
-            </tr>
-        </table>
-        </form>
+    <!-- Form Section -->
+    <form class="registration-form">
+        <div class="form-group">
+            <label for="Rollnumber" class="form-label">Roll Number</label>
+            <input type="number" name="Rollnumber" id="Rollnumber" maxlength="20" placeholder="Roll Number" required>
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+
 </body>
 </html>
