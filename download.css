@@ -11,30 +11,45 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #f0f0f5;
+    padding: 10px;
 }
+
 .header {
     text-align: center;
     padding: 20px;
     background-color: #237edf;
     color: white;
     border-radius: 10px;
-    
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
 }
 
 .header .logo img {
     max-width: 100%;
     height: auto;
+    border-radius: 50%;
 }
 
-.header h1, .header h3 {
+.header h1 {
     margin: 10px 0;
+    font-size: 2em;
 }
+
+.header h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #cfe6ff;
+}
+
 .nav-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     background-color: #003366;
     padding: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -49,8 +64,9 @@ body {
 .nav-link:hover {
     background-color: #0056b3;
 }
+
 .registration-form {
-    width: 90%;
+    width: 100%;
     max-width: 500px;
     background-color: #ffffff;
     padding: 20px;
@@ -73,10 +89,8 @@ body {
 #cnicnumber {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
     border: 1px solid #90c648;
-
+    border-radius: 5px;
 }
 
 .submit-button {
@@ -93,9 +107,34 @@ body {
 .submit-button:hover {
     background-color: #1a71fd;
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .header h3 {
+        font-size: 1em;
+    }
+
+    .nav-links {
+        gap: 8px;
+        padding: 8px;
+    }
+}
+
 @media (max-width: 600px) {
     .header h1 {
         font-size: 1.5em;
+    }
+
+    .header h3 {
+        font-size: 0.9em;
     }
 
     .nav-links {
