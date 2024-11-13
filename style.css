@@ -240,7 +240,7 @@
 /* Extra Small Devices (Portrait Phones, 480px and up) */
 @media (max-width: 480px) {
     .container {
-        width: 80%;
+        width: 90%;
         padding: 10px;
     }
 
