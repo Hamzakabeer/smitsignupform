@@ -153,7 +153,7 @@
 }
 
 .declarations ol {
-    padding-left: 20px;
+    padding-left: 6px;
 }
 
 .declarations li {
@@ -240,7 +240,7 @@
 /* Extra Small Devices (Portrait Phones, 480px and up) */
 @media (max-width: 480px) {
     .container {
-        width: 100%;
+        width: 70%;
         padding: 10px;
     }
 
@@ -266,7 +266,24 @@
     }
 
     .submit-button {
-        font-size: 0.9em;
+        font-size: 0.5em;
         padding: 8px;
     }
+    .declarations ol {
+        padding-left: 2px;
+    }
+    .declarations{
+        font-size: 0.2em;
+        text-align: justify;
+        text-align: left;
+        color: #7f86ee;
+    }
+    .file-note {
+        font-size: 0.30em;
+        color: #000000;
+        margin-top: 5px;
+    }
+    
 }
+
+
